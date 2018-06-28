@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>网站后台管理系统登录</title>
+<link href="css/login.css" rel="stylesheet" rev="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/jQuery1.7.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/jquery1.42.min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.js"></script>
+<script type="text/javascript" src="js/Validform_v5.3.2_min.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
+</head>
+
+<body onload="validateCode()">
+<div id="tab">
+  
+  <div class="tab_box"> 
+    <!-- 登录开始 -->
+             <h2>网站后台管理系统</h2>
+    <div>
+      <div class="stu_error_box"></div>
+      <form action="" method="post" class="stu_login_error">
+        <div id="username">
+          <label>用&nbsp;户&nbsp;名：</label>
+          <input type="text" id="stu_username_hide" name="username" placeholder="请输入用户名"/>
+          <!--ajaxurl="demo/valid.jsp"--> 
+        </div>
+        <div id="password">
+          <label>密&nbsp;&nbsp;&nbsp;码：</label>
+          <input type="password" id="stu_password_hide" name="password"  placeholder="请输入密码"/>
+        </div>
+        <div id = "validateInput">
+         <p id = "show_add"></p>
+         <input id="input_val" value=""/>&nbsp;&nbsp;<span id="change" onclick="validateCode()">换一张</span>
+        </div>
+
+        <div id="login">
+          <button type="submit" onclick="logining()">登录</button>
+        </div>
+      </form>
+    </div>
+   <!-- 登录结束-->
+   
+  </div>
+</div>
+
+<div class="screenbg">
+  <ul>
+    <li><a href="javascript:;"><img src="images/bg1.jpeg"></a></li>
+    <li><a href="javascript:;"><img src="images/bg2.jpeg"></a></li>
+    
+  </ul>
+</div>
+</body>
+</html>
